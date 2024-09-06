@@ -49,3 +49,5 @@ export default tseslint.config({
 })
 ```
 # Static-Version-of-Album-Tracker
+
+Hello! This is a static version of an app that I am just starting to work on for my coding bootcamp. I'm pretty excited about how it might turn out because I always forget what albums I liked throughout the years. I hope once its all finished you might enjoy using it too!
