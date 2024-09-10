@@ -6,4 +6,5 @@ export type Album = {
   name: string;
   image: string;
   link: string;
+  list: number;
 };

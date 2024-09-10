@@ -1,10 +1,17 @@
-import Button from "./Button"; //importing button for use in the card
+import { useState } from "react";
 
-export default function AlbumCard({
-  album,
-}: {
-  album: { artist: string; name: string; image: string; link: string }; //setting the property types
-}) {
+type AlbumCardProps = {
+  album: {
+    id: number;
+    artist: string;
+    name: string;
+    image: string;
+    link: string;
+  };
+  deleteAlbum: (idToDelete: number) => void;
+};
+
+export default function AlbumCard({ album, deleteAlbum }: AlbumCardProps) {
   function goToPage(linkToGoTo: string) {
     console.log("Navigating to your webpage...", linkToGoTo);
 
@@ -12,6 +19,12 @@ export default function AlbumCard({
     //https://developer.mozilla.org/en-US/docs/Web/API/Window/open
     window.open(linkToGoTo);
   }
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+
   //now we return some jsx that is the album card itself
   return (
     <div>
@@ -25,8 +38,8 @@ export default function AlbumCard({
           width={100} // nice small little album art
           className="pb-3" // a little bootstrap padding to make it look nicer
         />
-        <Button text={"Update"} />
-        <Button text={"Delete"} />
+        <button onClick={handleClick}>{count} listens</button>
+        <button onClick={() => deleteAlbum(album.id)}>Delete</button>
       </div>
     </div>
   );

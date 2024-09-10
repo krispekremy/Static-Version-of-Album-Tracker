@@ -12,6 +12,7 @@ const goatAlbumsList: Album[] = [
     name: "Rossz Csillag Alatt Született",
     image: vSnaresImage,
     link: "https://venetiansnares.bandcamp.com/album/rossz-csillag-alatt-sz-letett",
+    list: 2,
   },
   {
     id: 1,
@@ -19,6 +20,7 @@ const goatAlbumsList: Album[] = [
     name: "Blackened Sky",
     image: blackenedImage,
     link: "https://beggarsarkive.bandcamp.com/album/blackened-sky",
+    list: 2,
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ const goatAlbumsList: Album[] = [
     name: "Safe Crusades / No Judgements / And Baby",
     image: babyImage,
     link: "https://thecautionchildren.bandcamp.com/album/safe-crusades-no-judgements-and-baby-2",
+    list: 2,
   },
 ];
 //This is the exported component for displaying the greatest albums. Using the map method on the goatAlbumsList and the key is set to the id of each album!

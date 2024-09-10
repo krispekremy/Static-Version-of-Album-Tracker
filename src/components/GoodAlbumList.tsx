@@ -11,6 +11,7 @@ const goodAlbumsList: Album[] = [
     name: "BRAT",
     image: bratImage,
     link: "https://music.youtube.com/playlist?list=OLAK5uy_kmzoSOa_tCizE-r4sweNz91d9qBv1UCVY&si=r6f-8iH0pPuwWEcp",
+    list: 1,
   },
   {
     id: 1,
@@ -18,6 +19,7 @@ const goodAlbumsList: Album[] = [
     name: "Atavista",
     image: atavistaImage,
     link: "https://music.youtube.com/playlist?list=OLAK5uy_kNUaUBUfl1c8JdDeUYbpbfQ4H9RzpH2Iw",
+    list: 1,
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const goodAlbumsList: Album[] = [
     name: "Pretend It's Okay",
     image: augustImage,
     link: "https://music.youtube.com/playlist?list=OLAK5uy_mokTWUWCB-xRqrM-Vu8L4rLx6nP3ES-f4",
+    list: 1,
   },
 ];
 
